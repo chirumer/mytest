@@ -45,5 +45,5 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ secrets.SECRET_KEY }} is encrypted. $VARIABLE_SETTING is not"
+      - run: echo "${{ secrets.SECRET_KEY }} is encrypted. ${{ env.VARIABLE_SETTING }} is not"
 
