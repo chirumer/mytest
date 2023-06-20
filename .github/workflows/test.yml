@@ -13,3 +13,8 @@ jobs:
       - name: testing the code
         run: python test.py
       - run: echo "job complete"
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: performance_logs
+          path: logs.txt
